@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [FreeCrmApplication Automation Test]">
+  <listeners>
+    <listener class-name="frame.qa.crm.ExtentReport.ExtentReportNG"/>
+  </listeners>
+  <test thread-count="5" name="FreeCrm(failed)">
+    <classes>
+      <class name="frame.qa.crm.testcases.LoginPageTest">
+        <methods>
+          <include name="LoginPageTitleTest"/>
+          <include name="LoginTest"/>
+          <include name="crmLogoImageTest"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- frame.qa.crm.testcases.LoginPageTest -->
+      <class name="frame.qa.crm.testcases.ContactsPageTest">
+        <methods>
+          <include name="selectContactsTest"/>
+          <include name="validateCreateNewContact"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="selectMultipleContactsTest"/>
+          <include name="verifyContactsPageLable"/>
+        </methods>
+      </class> <!-- frame.qa.crm.testcases.ContactsPageTest -->
+      <class name="frame.qa.crm.testcases.HomePageTest">
+        <methods>
+          <include name="verifyHomePageTitleTest"/>
+          <include name="verifyUserNameTest"/>
+          <include name="tearDown"/>
+          <include name="verifyContactsLinkTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- frame.qa.crm.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- FreeCrm(failed) -->
+</suite> <!-- Failed suite [FreeCrmApplication Automation Test] -->
